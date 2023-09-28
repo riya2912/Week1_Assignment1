@@ -1,28 +1,25 @@
 # Week1_Assignment1
 Bash-based Performance Monitoring and Alerting Tool
 
-**Installation and configuration**
-1. Create an EC2 instance
-2. Connect the instance with local machine via ssh
-   
-  `ssh -i "AWSKey.pem" ubuntu@ec2-3-10-217-85.eu-west-2.compute.amazonaws.com`
-  
-3. Install LAMP (Linux, Apache, MySQL, PHP) stack using following commands:
+## Project Overview
 
-```sudo apt update```
+This project aims to create a Bash script that monitors system resources on a Linux server with a LAMP stack and sends alerts when predefined thresholds are crossed. It will also collect logs and system status for diagnostics.
 
+## System Deployment
 
-```
-sudo apt install apache2
-sudo systemctl start apache2
-sudo systemctl enable apache2
-```
+### Setting up a Linux Server with a LAMP Stack on AWS
 
+- Launch a Linux instance on AWS (e.g., Ubuntu, CentOS).
+- Install and configure Apache, MySQL, and PHP on the server.
+- Secure the server using firewall rules (e.g., AWS Security Groups) and security best practices.
 
-```
-sudo apt install mysql-server
-sudo systemctl start mysql
-sudo systemctl enable mysql
-```
+### Deploying the Bash Script
 
-`sudo apt install php`
+- Upload the Bash script to the server.
+- Make the script executable (`chmod +x script.sh`).
+- Schedule the script to run at regular intervals (e.g., using cron) for resource monitoring.
+
+### Configuring a Static IP and Reverting to DHCP
+
+- Assign a static IP address to your Linux server.
+- Observe the server's behavior with the static IP.
