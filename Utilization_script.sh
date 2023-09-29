@@ -37,8 +37,13 @@ network_check()
 	fi
 }
 
+metrics_file="/home/ubuntu/projects/Week1_Assignment1/metrics.txt"
 
-cpu_usage
-memory_usage
-disk_usage
-network_check
+while true
+do
+	cpu_usage >> "$metrics_file"
+	memory_usage >> "$metrics_file"
+	disk_usage >> "$metrics_file"
+	network_check >> "$metrics_file"
+	sleep 5
+done
