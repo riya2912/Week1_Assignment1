@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Function to check memory usage
 
 cpu_usage()
@@ -41,6 +42,7 @@ metrics_file="/home/ubuntu/projects/Week1_Assignment1/metrics.txt"
 
 while true
 do
+	echo "current Date and Time is - $(date +"%Y-%m-%d %H:%M:%S")" >> "$metrics_file"
 	cpu_usage >> "$metrics_file"
 	memory_usage >> "$metrics_file"
 	disk_usage >> "$metrics_file"
