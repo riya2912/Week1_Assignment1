@@ -1,0 +1,4 @@
+CPU usage is - 0.0
+Memory usage is - 531Mi
+Disk usage of root directory is - 38%
+Network connectivity is OK
