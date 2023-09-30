@@ -1,0 +1,5 @@
+current Date and Time is - 2023-09-29 23:13:00
+CPU usage is - 0.0
+Memory usage is - 525Mi
+Disk usage of root directory is - 38%
+Network connectivity is OK
